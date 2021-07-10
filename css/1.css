@@ -1,0 +1,150 @@
+.row ul li {
+    font-size: 16px;
+    margin-right: 10px;
+    line-height: 36px;
+}
+.th {
+    height: 36px;
+}
+@media (max-width:576) {
+    .row ul li {
+        font-size: 12px;
+        margin: 3px;
+    }
+    .row ul li:last-child{
+        margin-right: 0;
+    }
+}
+.ss {
+    height: 80px;
+    width: 281px;
+    margin-top: 22px;
+    
+}
+.ss-1>div input {
+   width: 476px;
+   height: 34px;
+   margin-top: 23px;
+   margin-bottom: 0; 
+   border: 3px solid orange;
+   padding: 8px 0;
+   margin-left: 0;
+}
+.ss-k {
+    width: 95px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    margin-top: 22px;
+   margin-bottom: 0;
+   border-radius: 0 5px 5px 0;
+   font-size: 24px;
+}
+.ss-xia {
+    width:690px;
+    margin: 5px auto;
+}
+.ss-xia a:nth-child(1) {
+   font-size: 12px;
+   color: orange;
+   margin-right: 5px;
+}
+.ss-xia a:nth-child(n+2) {
+   font-size: 12px;
+   color: black;
+   margin-right: 5px;
+}
+/* .lunbo {
+    margin-bottom: 200px;
+}  */
+
+.lb-d li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50% ;
+}
+.lb-d .active {
+    background-color:red;
+}
+.jg-1 {
+    border: 1px solid #d8d8d8;
+    padding-left :20px;
+   
+  
+}
+.jg-1 input {
+    width: 46px;
+    height: 24px;
+}
+.jg-1-1 {
+    width: 145px;
+    height: 40px;
+    border-right: px solid black;
+    padding: 0 20px ;
+}
+.zt li {
+    width: 234px;
+    height: 364px;
+    padding: 22px 20px 0 20px;
+}
+.zt li img {
+    width: 194px;
+    height: 198px;
+}
+.zt li a {
+    color: black;
+    text-decoration: none;
+}
+.zt li a .zt-xx {
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+.zt li a>div:last-child{
+    padding:8px 0 0 154px;
+    font-size: 12px;  
+}
+.zt li a .zt-jj{
+    font-size: 14px;
+}
+.zt li {
+    border: 0.3px solid grey;
+}
+.zt .zt-xh {
+    border-bottom: 1px solid grey;
+}
+.zt li:hover {
+    border: 1px solid red;
+}
+.yw-1 a{
+   text-decoration: none;
+   color: black;
+   border-right:1px solid black;
+   padding: 0 13px 0 12px;
+}
+.yeweil a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+.yeweil .yeiwe a{
+  border-right: 1px solid black;
+  padding-right: 10px;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+.yeweil a:hover {
+    opacity: 1;
+}
+.zd a img{
+   width: 38px;
+   height: 42px;
+   opacity: 0.4;
+}
+.zd a {
+    margin-right: 20px;
+}
+.zd img:hover {
+    opacity: 1;
+}

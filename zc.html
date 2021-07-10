@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .sg-1 a{
+            font-size: 12px;
+            text-decoration: none;
+           margin: 10px 0 0px 0;
+        }
+        .sg-1 {
+            height: 48px;
+        }
+        .dropdown-content{
+            display: none;
+        }
+        .sg-1-dq:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            font-size: 12px;
+            padding: 0 6px;
+        }
+        .sg-1-dq:hover .sg-1-h{
+            display: block;
+        }
+        .sg-1-h a {
+            padding: 0 6px;
+        } 
+        .sg-1-dq:hover .sg-1-mj {
+            display: block;
+        }
+        .sg-1-zh , .sg-1-dq{
+            margin-top: 5.5px;
+        }
+        .sg-1 a:hover {
+            color: red;
+        }
+        .zc-t {
+            padding: 8px 0;
+        }
+     
+        .zc-kk {
+            width: 90%;
+            height: 365px;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+        }
+        .zc-kk-s {
+            width: 38%;
+            height: 262px;
+            margin: 103px  305px  305px;
+            /* border: 1px solid black; */
+          
+        }
+        .zc-kk-k {
+            font-size: 14px;
+        }
+        .zc-kk-k input {
+            width: 64%;
+            height: 36px;
+            outline: none;
+        }
+        .zc-d {
+            display: inline-block;
+            /* border-bottom:1px solid black ;
+            border-top:1px solid black ;
+            border-left:1px solid black ; */
+            width: 80%;
+            height: 36px;
+            font-size: 16px;
+        }
+       .zc-y    {
+           width: 81%;
+           height: 34px;
+       }
+       .zc-t{
+           width: 84%;
+           height: 36px;        
+ outline: none;
+       }
+     
+       
+       .zc-fuw,.zc-fuw a {
+           font-size: 12px;
+             text-decoration: none;
+            
+       }
+       .zc-fuw a {
+           color: red;
+       }
+       .qiehuan {
+           
+           height: 19px;
+       }
+       .qiehuan a {
+           font-size: 12px;
+           color: red;
+       }
+       .zc-yzm  input{
+           outline: none;
+       }
+       .zc-sj {
+           margin-right: 5px;
+       }
+       .zc-yz {
+           margin-right: 5px;
+       }
+       .zc-yw {
+           width: 90%;
+           height: 36px;
+           padding: 4px ;
+           margin-top: 20px;
+           border-bottom: 1px solid black;
+           border-top: 1px solid #000;
+        }
+        .zc-yw a {
+            text-decoration: none;
+            color: #000;
+            border-right: 1px solid black;
+            font-size: 14px;
+            padding-right: 4px;
+            opacity: 0.7;
+        }
+        .zc-yw a:hover {
+            opacity: 1;
+            color: orangered;
+        }
+         .zc-ydl {
+             width: 90%;
+             height: 36px;
+
+         }
+         .zc-ydl a {
+             text-decoration: none;
+             color: #000;
+             font-size: 14px;
+             margin: 6px 0;
+             opacity: 0.7;
+         }
+         .zc-ydl a:hover {
+             opacity: 1;
+             color: orangered;
+         }
+         .zc-ydll {
+             width: 90%;
+             height: 36px;
+             font-size: 14px;
+             opacity: 0.7;
+         }
+         .zc-ydll a:hover {
+            opacity: 1;
+            color: orangered;
+         }
+         .zc-ydll a {
+             text-decoration: none;
+             color: #000;
+             opacity: 0.7;
+             font-size: 14px;
+         }
+         .zc-ydll a {
+             opacity: 1;
+         }
+         .zc-ydll p:nth-child(1), .zc-ydll p:nth-child(2){
+             border-right: 1px solid black;
+             padding-right: 8px;
+         }
+        @media (max-width:576px) {
+            .zc-ydll{
+                margin-top: 60px ;
+            }
+           .zc-ydl {
+               margin-top: 60px;
+           }
+        }
+        @media  (min-width: 576px) and (max-width: 768px) {
+            .zc-ydll{
+                margin-top: 40px ;
+
+            }
+            .zc-ydl {
+                margin-top: 40px;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row sg-1">
+            <div class="col-md-3 justify-content-between d-flex flex-wrap col-xl-3  col-lg-3 sg-1-1 col-sm-12 col-lg-3">
+                <a href="dl.html" class="text-danger">亲,请登录</a>
+                <a href="#">免费注册</a>
+                <a href="#">手机淘宝</a>
+            </div>
+            <div class="col-md-8 offset-1 justify-content-between col-xl-8 offset-xl-1 offset-lg-1 col-lg-8 d-flex flex-wrap col-sm-12 offset-sm-0 col-lg-8 offset-md-1 offset-lg-0">
+                <div class="dropdown  sg-1-dq"><a href="1.html" class="">淘宝网首页</a>
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">我的仓库</a>
+                    <a href="#" class="dropdown-item">我的收藏</a>
+                    <a href="#" class="dropdown-item">我的足迹</a>
+                    <a href="#" class="dropdown-item">我的评价</a>
+                    <a href="#" class="dropdown-item">待付款</a>
+                  </div>
+                </div>
+                <a href="#">我的淘宝</a>
+                <a href="#">购物车</a>
+                <div class="dropdown sg-1-dq"><a href="#">我的收藏夹</a>
+                <div class="dropdown-content sg-1-h">
+                    <a href="#" class="dropdown-item">已付款</a>
+                    <a href="#" class="dropdown-item">未发货</a>
+                </div>
+                </div>
+                <a href="#">商品分类</a>
+                <div class="dropdown sg-1-dq"><a href="#">卖家的中心</a>
+                <div class="dropdown-content sg-1-mj">
+                    <a href="#" class="dropdown-item">我的店铺</a>
+                    <a href="#" class="dropdown-item">店铺信息</a> <a href="#" class="dropdown-item">商品分类</a>
+                    <a href="#" class="dropdown-item">开分店</a>
+                </div>
+                </div>        
+                <a href="#">联系客服</a>
+                <a href="#">网站导航</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2 pl-0 pr-0">
+                <a href="#"><img src="./img/}GLFSTN%%%]WY]H5B6$V%AY.png" alt="" class=""></a>
+            </div>
+            <div class="col-2 zc-t offset-3">
+                <span class="h4 ">用户注册</span>
+            </div>
+        </div>
+         <div class="zc-kk">
+         <div class="zc-kk-s d-flex flex-wrap  justify-content-sm-start justify-content-xl-center justify-content-lg-center justify-content-md-center ">
+           <div class=" zc-kk-k "><span class="zc-sj">手机号码</span><span class="zc-d">中国大陆+86 <input type="text"> </span></div>
+            <div class="zc-yzm"><span class="zc-yz">验证码</span><input type="text" placeholder="请输入验证码" class=""><a href="#" class="text-danger">获取验证码</a></div>
+            <button class="zc-t text-center bg-danger text-light">同意协议并注册</button>
+            <span class="zc-fuw">已阅读并同意以下协议<a href="#">淘宝平台服务协议</a>  
+            <a href="#">淘宝平台服务协议</a> <a href="#">淘宝平台服务协议</a><a href="#">淘宝平台服务协议</a> </span>    
+            <div class="qiehuan w-100"><div class="float-right"><a href="#">切换成企业账户注册</a></div></div>
+        </div>
+        </div> 
+        <div>
+            <div>
+                <div class="zc-yw d-flex justify-content-md-between flex-wrap justify-content-sm-center justify-content-xl-between justify-content-lg-between">
+                    <a href="">阿里巴巴集团</a>
+                    <a href="">阿里巴巴国际站</a>
+                    <a href="">阿里巴巴中国站</a>
+                    <a href="">全球速卖通</a>
+                    <a href="">淘宝网</a>
+                    <a href="">天猫</a>
+                    <a href="">聚划算</a>
+                    <a href="">一淘</a>
+                    <a href="">阿里妈妈</a>
+                    <a href="">阿里云计算</a>
+                    <a href="">云OS</a>
+                    <a href="">万网</a>
+                    <a href="">支付宝</a>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-md-between justify-content-lg-between justify-content-xl-between justify-content-sm-center flex-wrap zc-ydl">
+                        <a href="#">关于淘宝</a>
+                        <a href="#">合作伙伴</a>
+                        <a href="#">营销中心</a>
+                        <a href="#">联系客服</a>
+                        <a href="#">开放平台</a>
+                        <a href="#">诚聘英才</a>
+                        <a href="#">网站地图</a>
+                        <a href="#">法律声明及隐私权限</a>
+                        <p>© 2021 Taobao.com 版权所有</p>
+                    </div>
+                </div>
+                <div>
+                    <div class=" d-flex justify-content-md-between flex-wrap justify-content-sm-center justify-content-xl-between justify-content-lg-between zc-ydll">
+                        <p>网络文化经营许可证:<a href="#">文网文[2010]040号</a></p>                   
+                        <p>增值电信业务经营许可证：浙B2-20080224-1</p>
+                        <p>信息网络传播视听节目许可证：1109364号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

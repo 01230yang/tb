@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/1.css">
+    <title>Document</title>
+    <style>
+        input ,button {
+            outline: none;
+        }
+       .sg-1 a{
+            font-size: 12px;
+            text-decoration: none;   
+           margin: 10px 0 0px 0;
+           color: black;
+        }
+        .sg-bg-1{
+            background-color: #f5f5f5;
+        }
+        .sg-1 {
+            height: 48px;
+            background-color: #f5f5f5;
+        }
+        .dropdown-content{
+            display: none;
+        }
+        .sg-1-dq:hover .dropdown-content {
+            display: block;
+            position: relative;
+            z-index: 10;
+        }
+        .dropdown-content a {
+            font-size: 12px;
+            padding: 0 6px;
+        }
+        .sg-1-dq:hover .sg-1-h{
+            display: block;
+        }
+        .sg-1-h a {
+            padding: 0 6px;
+        } 
+        .sg-1-dq:hover .sg-1-mj {
+            display: block;
+        }
+        .sg-1-zh , .sg-1-dq{
+            margin-top: 5.5px;
+        }
+        .sg-1 a:hover {
+            color: red;
+        }
+        .ss-input {
+            width: 80%;
+            height: 5.5vh;
+        }
+        .ss-btn {
+            width: 19%;
+            height:5.5vh;
+            margin-left: -5px;
+            outline: none;
+            border: 0;
+            position: absolute;
+
+        }
+        .ss-a {
+            font-size: 12px;
+            text-decoration: none;
+            color: black;
+        }
+        .shous a {
+            text-decoration: none;
+            color: #000;
+        }
+        .shous a:hover{
+            color: red;
+        }
+        .shous {
+            margin: 20px 0;
+            overflow: hidden;
+        }
+       .shous img {
+           width: 281px;
+           height: 80px;
+       }
+       .shous input{
+            border: 3px solid #f30726;
+       }
+       .shous button {
+           padding-top: 0px;
+           outline: none;
+        color:white;
+        font-size: 20px;
+           background-color: #f30726;
+       }
+       .jg-1 {
+           font-size: 16px;
+          padding: 10px 0;
+          height: 42px;
+       }
+       .jg-1-1 {
+           width: 180px;
+           outline: none;
+       }
+       .jg-1-1 input {
+           outline: none;
+       }
+       .jg-1-1 button{
+           font-size: 12px;
+           padding: 0;
+           width: 42px;
+           height: 22px;
+           outline: none;
+       }
+    .jg-btn{ opacity: 0;
+    }
+    .jg-inp:active .jg-btn{
+       opacity: 1;
+    }
+    .ss-bot{
+        height: 20px;
+    }
+    .jg-1-z{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .weiba-1{
+        background-color: #f5f5f5;
+    }
+    .anniu{
+            position: fixed;
+            right: 20px;
+            bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头 -->
+    <div class="container-fluid sg-bg-1">
+     <div class="container">
+        <div class="row  sg-1">
+            <div class="col-md-3 justify-content-between d-flex flex-wrap col-xl-3  col-lg-3 sg-1-1 col-sm-12 col-lg-3">
+                <a href="dl.html" class="text-danger">亲,请登录</a>
+                <a href="zc.html" target="_self">免费注册</a>
+                <a href="#">手机淘宝</a>
+            </div>
+            <div class="col-md-8 offset-1 justify-content-between col-xl-8 offset-xl-1 offset-lg-1 col-lg-8 d-flex flex-wrap col-sm-12 offset-sm-0 col-lg-8 offset-md-1 offset-lg-0">
+                <div class="dropdown  sg-1-dq"><a href="#" class="">淘宝网首页</a>
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">我的足迹</a>
+                    <a href="#" class="dropdown-item">爱逛街</a>
+                    <a href="#" class="dropdown-item">我的仓库</a>
+                    <a href="#" class="dropdown-item">我的钱包</a>
+                    <a href="#" class="dropdown-item">商品分类</a>
+                  </div>
+                </div>
+                <a href="#">我的淘宝</a>
+                <a href="#">购物车</a>
+                <div class="dropdown sg-1-dq"><a href="#">我的收藏夹</a>
+                <div class="dropdown-content sg-1-h">
+                    <a href="#" class="dropdown-item">商品收藏</a>
+                    <a href="#" class="dropdown-item">我的链接</a>
+                </div>
+                </div>
+                <a href="#">商品分类</a>
+                <div class="dropdown sg-1-dq"><a href="#">卖家的中心</a>
+                <div class="dropdown-content sg-1-mj">
+                    <a href="#" class="dropdown-item">免费开店</a>
+                    <a href="#" class="dropdown-item">我的库房</a> <a href="#" class="dropdown-item">交易记录</a>
+                    <a href="#" class="dropdown-item">我的入账</a>
+                </div>
+                </div>
+                
+                <a href="#">联系客服</a>
+                <a href="#">网站导航</a>
+            </div>
+        </div>
+    </div> </div>
+    <div class="container">
+    <div class="row shous">
+        <div class="col-md-3 col-sm-6 col-lg-2 col-xl-3 d-flex flex-wrap">
+            <img src="./img/tb.jpg" alt="" class="">
+        </div>
+        <div class="col-md-7 p-0  col-sm-12 col-xl-7 col-lg-7 offset-md-2 offset-xl-0 ss-a">
+           <div class="row ">
+            <div class="col-12">
+            <input type="text" class="ss-input p-0 mt-0">
+            <button class="ss-btn  ">搜索</button>
+        </div>
+        <div class="col-12 d-flex justify-content-between  flex-wrap ss-bot mt-2">
+            <a href="#" class="text-danger">一淘限时抢</a>
+            <a href="#">优衣库</a>
+            <a href="#">大码女装</a>
+            <a href="#">水杯</a>
+             <a href="#">安踏</a>
+             <a href="#">床垫</a>
+             <a href="#">男衬衫</a>
+             <a href="#">粉底</a>
+             <a href="#">包包</a>
+             <a href="#">男体恤</a>
+             <a href="#">沐浴露</a>
+            </div>
+    </div></div>
+    </div>
+</div>
+         <div class="container lunbo">
+             <div class="carousel slide" data-ride="carousel" id="lb">            
+                    <!-- 准备轮播图片区域 -->
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                        <img src="./img/1111.jpg" alt="" class="d-block w-100" >
+                    </div>
+                        <div class="carousel-item ">
+                        <img src="./img/22220.jpg" alt="" class="d-block w-100" >
+                    </div>
+                        <div class="carousel-item ">
+                        <img src="./img/33333.jpg" alt="" class="d-block w-100" >
+                    </div>
+                        <div class="carousel-item ">
+                        <img src="./img/4444.jpg" alt="" class="d-block w-100" >
+                    </div>     
+                   </div>
+                   <a href="#lb" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon bg-success active"></span></a>
+                   <a href="#lb" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon bg-success"></span></a>
+                   <ul class="carousel-indicators lb-d">
+                     <li data-target="#lb" data-slide-to="0" class="active">1</li>
+                     <li data-target="#lb" data-slide-to="1">2</li>
+                     <li data-target="#lb" data-slide-to="2">3</li>
+                     <li data-target="#lb" data-slide-to="3"></li>
+                   </ul>
+             </div>
+         </div>
+</div>
+  <div class="container mt-2">
+      <div class="jg-1 d-flex">
+      <span class="jg-1-z">价格区间</span>
+      <div class="jg-1-1 d-flex justify-content-start">
+          <input type="text" placeholder="￥" class="jg-inp">-
+          <input type="text" placeholder="￥">
+          <button class="bg-danger jg-btn">确定</button></div>
+     
+  </div></div>
+  <!-- 主体 -->
+     <div class="container zt">
+         <div class="p-4">
+            <ul class="list-unstyled justify-content-start d-flex flex-wrap justify-content-between align-items-md-center  justify-content-xl-between justify-content-sm-center justify-content-lg-between justify-content-md-between">
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN012YcAMd1nP968w8egW_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN011lwIlH1oI6YKn3Kiq_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN0122GdlG4oKiVmCWQ_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN0197MjAa22Gdymjwudr_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01iJ15N52ByuoKCnXMd_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01o1a9Xn1LxDJqDOhKw_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01FAtOiS26A0h5WQFm6_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01fVFgnh2IWhd4QOS6D_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01iJ15N52ByuoKCnXMd_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01ivL63J1GepKch8XTB_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01JTHrWD1TWCsTWGI3o_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01KaFUTj1LIuSuiyUeO_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01JTHrWD1TWCsTWGI3o_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01kqv77K1bZQXb9hbaQ_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01o1a9Xn1LxDJqDOhKw_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01OoQOMm1Ca0i8DRIVu_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01TfZqY81Clv0aTjzpF_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01XfQ4LQ1ZwfT4m7tFs_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01YcsuVd1SguUzY5ycr_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+                <li class="mt-1">
+                    <a href="#" class=""><div><img src="./img/O1CN01zWqFoY1YlqTjVlYja_!!0-item_pic.jpg_430x430q90.jpg" alt=""></div><span class="zt-jj">2021春夏新款女装时尚高雅套装宽松T恤上衣+松紧高腰印..</span><div><span class="h5 text-danger">￥428.00</span><span class="zt-xx">￥428</span></div>
+                    <div class="zt-xh"><span class="text-danger "></span>精灵旗舰店</div><div>月销49</div></a>
+                </li>
+              
+            </ul>
+         </div>
+     </div>
+     <!-- 尾巴 -->
+     <div class="container weiba ">
+      <div class="pagination justify-content-center">
+      <button class="btn page-item disabled mr-1">上一页</button>
+      <button class="btn page-item active">1</button>
+      <button class="btn page-item ">2</button>
+      <button class="btn page-item ">3</button>
+      <button class="btn page-item ">4</button>
+      <button class="btn page-item mr-1">……</button>
+      <button class="btn page-item">下一页</button>
+      </div>
+     </div>
+     <!-- 尾尾 -->
+     <div class="container weiba-1">
+         <div class="yw-1 d-flex">
+             <span class="">您是不是想找：</span>
+             <a href="#">书包</a>
+             <a href="#">女装</a>
+             <a href="#">剃须刀</a>
+             <a href="#">窗帘</a>
+             <a href="#">防晒霜</a>
+             <a href="#">沐浴露</a>
+             <a href="#">外套</a>
+             <a href="#">玩具</a>
+             <a href="#">电视</a>
+             <a href="#">女裤</a>
+         </div>
+     </div>
+     <!-- 页底 -->
+    <div class="container yeweil">
+      <div>
+        <div class="d-flex justify-content-start flex-sm-wrap">
+            <!-- 第一 -->
+            <div class="mr-3">
+                <a href="#" class="mr-1">联系客服</a>
+                <a href="#" class="mr-1">开放平台</a>
+                <a href="#" class="mr-1">法律声明</a>
+                <a href="#">廉正举报</a>
+            </div>
+            <div class="">
+                <span>Taobao.com版权所有 2003-现在</span>
+                <a href="#" class="mr-1">增值电信业务经营许可证：浙B2-20070195</a>
+                <a href="#"><img src="./img/TB1jwakrbH1gK0jSZFwXXc7aXXa-20-20.png" alt="">
+                浙公网安备 330100020000075号
+                </a>
+            </div>
+        </div>
+        <!-- 底二 -->
+        <div class="yeiwe d-flex flex-wrap mt-2 mb-1">
+           <a href="#">阿里巴巴集团</a>
+           <a href="#">淘宝网</a>
+           <a href="#">天猫</a>
+           <a href="#">聚划算</a>
+           <a href="#">全球数卖通</a>
+           <a href="#">阿里巴巴国际交易市场</a>
+           <a href="#">1688</a>
+           <a href="#">阿里妈妈</a>
+           <a href="#">飞猪</a>
+           <a href="#">阿里云计算</a>
+           <a href="#">AliOS</a>
+           <a href="#">阿里通信</a>
+           <a href="#">高的</a>
+           <a href="#">UC</a>
+           <a href="#">发盟</a>
+           <a href="#">虾米</a>
+           <a href="#">阿里星球</a>
+           <a href="#">钉钉</a>
+           <a href="#">支付宝</a>
+           <a href="#">达摩院</a>
+        </div>
+        <div class="zd">
+            <a href="#"> <img src="./img/T1VVv9FABeXXbtCInf-38-42.png" alt=""></a>
+           <a href=""><img src="./img/TB1HxCbreL2gK0jSZPhXXahvXXa-65-70.gif" alt=""></a>
+            <a href=""><img src="./img/TB1jwakrbH1gK0jSZFwXXc7aXXa-20-20.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="btn-group-vertical anniu">
+        <button class="btn mb-3">联系客服</button>
+        <button class="btn mb-3">售后服务</button>
+        <button class="btn mb-3">联系我们</button>
+        <button class="btn "><a href="#"> 回到顶部</a></button>
+    </div>
+</body>
+
+</html>
